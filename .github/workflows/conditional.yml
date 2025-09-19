@@ -1,0 +1,13 @@
+name: Conditional Workflow
+
+on:
+  push:
+    paths:
+      - "src/**"
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wypisz wiadomość
+        run: echo "Zmiana w katalogu src/!"
